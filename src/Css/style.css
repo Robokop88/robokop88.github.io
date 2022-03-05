@@ -1,0 +1,249 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+}
+
+/* Шапка, ширину не указываем, потому что она будет подстраиваться автоматически */
+nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #212121;
+    z-index: 2;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between; /* для соответствующего выравнивания по горизонтали */
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none; /* Чтобы убрать макркировку списка точками */
+}
+
+.menu .menu_link {
+    text-decoration: none; /* Это для того, чтобы убрать подчеркивние ссылок */
+    font-size: 15px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.menu .menu_link:hover {
+    text-decoration: underline; /* Это для того, чтобы при наведении было подчеркивание */
+}
+
+.menu .menu_item {
+    border-right: 2px dotted black; /* Это черточки в нав. меню */
+    padding-right: 42px; 
+}
+
+.subheader {
+    position: absolute;
+    width: 100%;
+    height: 84px;
+    background-color: rgba(0,0,0,.6);  
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.subheader .subheader_logo {
+    display: block;
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.subheader .subheader_official {
+    margin-top: 6px;
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+
+
+.subheader .subheader_call {
+    font-size: 12px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-top: 19px;
+    text-align: right; 
+}
+
+
+.subheader .subheader_phone {
+    display: block;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none; /* Это для того, чтобы убрать подчеркивние ссылок */
+    color: #ffffff;
+    margin-top: 8px;
+    line-height: 12px;
+    text-align: right;
+}
+
+.subheader .subheader_btn {
+    margin-top: 19px;
+    width: 178px;
+    height: 52px;
+    background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%);
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.11);
+   /* Текст кнопки */
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    color: #ffffff;
+}
+
+.promo {
+  /*   position: absolute; */
+   /*  width: 100%; */
+    min-height: 800px;
+    background: url('../img/BG/Uber\ partners.png') center center/cover no-repeat;
+    padding: 233px 0 132px 0;
+    /* margin-top: 50px; */
+    z-index: -1;
+    
+}
+
+.promo .promo_header {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+.promo .promo_subheader {
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.promo .promo_deskr {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 23px;
+    text-align: center;
+}
+
+.promo .promo_btn {
+    display: block;
+    width: 265px;
+    height: 69px;
+    background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%);
+    border: 3px solid rgba(0,0,0,0.06);
+    box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.11);
+    margin: 0 auto;
+    margin: 115px auto 0 auto;
+    border:none;
+    border-radius: 4px;
+    font-size: 18px; 
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    color: #ffffff;
+}
+
+.advantages {
+    padding: 71px 0 68px 0;
+}
+
+.advantages .advantages_inscription {
+    margin: 0 auto;
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+    padding: 5px 12px;
+    /* текст */
+    font-size: 11px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    margin-top: 38px;
+}
+
+.advantages .advantages_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.advantages .advantages_block .advantages_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+}
+
+
+.advantages .advantages_block .advantages_descr {
+    width: 343px;
+}
+
+.advantages .advantages_block .advantages_descr .advantages_subtitle {
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #1eacc7;
+}
+
+.advantages .advantages_block .advantages_descr .advantages_text {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #202020;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
