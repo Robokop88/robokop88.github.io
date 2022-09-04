@@ -30,7 +30,19 @@ window.addEventListener('DOMContentLoaded', () => {
         return false;
       });
     });
-    
+
+    let inputs = document.querySelectorAll('input[type="tel"]');
+    let Im = new Inputmask('+7 (999) 999-99-99');
+    Im.mask(inputs);
+
+    let maxLength = 30;
+
+    $('input[type="text"], input[type="email"]').on('input', function(){
+      console.log(this.value.length)
+      if (this.value.length > maxLength){
+        this.value = this.value.slice(0, maxLength);
+      }
+    });
     
     $('[data-modal=phone]').on('click', function() {
       $('.overlay, #phone').fadeIn('slow');
